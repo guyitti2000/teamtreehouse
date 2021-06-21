@@ -1,0 +1,97 @@
+html {
+
+	font-size: 100%px;  /* usually 16px on most screens */
+}
+/* type selectors */
+h1 {
+	font-size: 4em;
+	margin-bottom: 1.5rem;
+}
+#heading {
+	color: black;
+}
+
+p {
+	color: olive;
+	font-size 26px;
+}
+header {
+	background-color: #f60; /*short form of #ff6600*/
+	width: 80%;
+	margin-left: 10%;
+}
+header p {
+	background-color: snow;
+	border-bottom: 8px solid gray;
+}
+#header-box {
+	width: 50%;
+	background-color: #33d549;
+}
+img {
+	width: 100%;
+}
+footer {
+	background-color: lightcoral;
+}
+a:link {
+	color: darkblue;
+	background-color; peachpuff;
+	text-decoration: none;
+}
+a:visited {
+	color: seagreen;
+}
+a:hover {
+	text-decoration: underline;
+}
+img:hover {
+	border: 2px solid blue;
+}
+/*focus pseudo class is only applied to interactive elements like link buttons and form elements*/
+a:focus {
+	color: rbg(255, 255, 255);
+	background-color: rgba(0, 100, 200, .5);
+}
+ol li {
+	letter-spacing: 3px;
+	color: tomato;
+}
+ol li:first-child {
+	font-weight: bold;
+}
+ul li {
+	list-style: none;
+}
+/* id selectors */
+#education {
+	border: 3px solid red;
+}
+#education h3{
+	font-family: Arial, sans-serif;
+	font-size: 32px;
+	background-color: rgb(0, 200, 200);
+}
+#skills-list {
+	background-color: aliceblue;
+	padding: 36px;
+}
+/* class selectors */
+.top-skill {
+	font-weight: bold;
+	background-color: teal;
+	color: white;
+}
+.date {
+	border: 2px solid steelblue;
+	border-radius: 12px;
+	padding: 6px;
+}
+.special {
+	text-transform: uppercase;
+	background-color: papayawhip;
+}
+#proud {
+	font-size: 48px;
+	background-color: firebrick;
+}

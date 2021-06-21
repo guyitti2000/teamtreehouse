@@ -1,0 +1,124 @@
+/*
+article, aside, footer { margin: 12px;
+	margin: 8px;
+}
+*/
+
+
+body {
+	font-family: purisa;
+}
+
+
+
+
+{
+	box-sizing: border-box; /* a good time to use universal*/
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	background-color: #294969;
+	color: ghostwhite;
+	padding: 10px 20px 10px 20px; /* T, R, B, L, padding shorthand*/
+    border: 12px solid #ffa949; /*shorthand wid style color*/	
+	border-bottom-color: #97d8c4; /* middle blue green */
+	/* margin: 20px 10px; */ /* margin is the space outside the border and separates one css box from another, doesn't affect measurement */
+	/*
+	border-width: 20px 10px 5px 20px;
+	border-style: dashed solid;
+	border-color: rgba(222, 222, 0, .5) tomato;
+	/*
+	padding: 10% 15%; /* % is relative to the (header's )width not the height*/
+	/*
+	/*
+	padding: 15px; /* will apply same padding to all 4 sides */
+	*
+	/*
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	*/
+	/* a good idea is to use the web dev tool to preview changes*/
+	
+
+}
+article {
+	margin-top: 5rem;
+}
+section {
+	min-height: 100vh;
+	padding: rem;
+	border-bottom: 2px dotted #666;
+	background-color: azure;
+	}
+h1 {
+	width: 100%;
+	position: absolute;
+	top: 20;
+	right: 10px; 
+	background-color: yellow;
+}
+/*
+a {
+	display: block;
+	width: 400px;
+	background-color: tomato;
+
+*/
+#interesting-banner{
+	padding: 10px 15px;
+	border: 12px solid lightsalmon;
+	margin: 0 -8px;
+	background: firebrick;
+	color: white;
+	font-weight: bold;
+}
+.hide {
+	display: none;
+}
+figure {
+	position: relative;
+	margin: 0;
+}
+figcaption {
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	background-color: yellow;
+	text-align: center;
+}
+figure, aside img{
+
+	width: 100%;
+	max-width: 600px;
+/*	height: auto; this is the default */
+}
+#bio {
+	width: 100%;
+	max-width: 600px;
+	padding: 2rem;
+	border: 5px solid tomato;
+	background-color: mistyrose;
+}
+footer { /* working from inside out to group them */
+ 	width: 200px;
+	padding: 4px;
+	border: 2px solid #ffa949;
+	margin: 30px auto 15px; /* this can center things */
+	color: #294969;
+	font-size: .8rem;
+	text-align: center;
+}
+ul li {
+	display: inline-block;
+	width: max-content;
+	padding: 10px 0;
+	background-color: yellow;
+	text-align: center;
+}

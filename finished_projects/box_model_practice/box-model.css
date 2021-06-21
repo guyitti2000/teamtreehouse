@@ -1,0 +1,55 @@
+/* =========================================================== 
+   Practice CSS Box Model 
+============================================================== */
+
+.box {
+	width: 90%;
+	max-width: 600px;
+	height: 300px;
+	padding: 20px;
+	border: 2px solid #97d8c4;
+	margin: auto;
+	overflow-y: scroll; /*y will making it a vertical scrool bar*/
+	box-sizing: border-box;
+	color: #8B85c1;
+
+	
+  
+  /* Apply a fluid width of 90% and a height of 300px. 
+  The width of .box should get no wider than 600px. */  
+
+
+
+
+  /* Add 20 pixels of padding on all four sides. */
+
+  
+  /* Apply a 2px solid border to each side. */
+
+  
+  /* Use margins to center .box on the page. */
+
+  
+  /* Prevent the contents of .box from overflowing. */
+
+  
+  /* Force border-width and padding values into the total width and height of .box */
+
+  
+}
+
+
+/*
+footer { 
+ 	width: 200px;
+	padding: 4px;
+	border: 2px solid #ffa949;
+	margin: 30px auto 15px; 
+	color: #294969;
+	font-size: .8rem;
+	text-align: center; 
+} */
+
+
+
+
