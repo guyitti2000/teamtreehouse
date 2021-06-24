@@ -4,7 +4,7 @@ class Car:
     doors = 2
     engine = True
 
-    def __init__(self, make, model, year=2020, gas=100):
+    def __init__(self, make, model, year, gas=100):
         self.make = make
         self.model = model
         self.year = year
@@ -14,9 +14,10 @@ class Car:
     def __str__(self):
         return f'{self.make} {self.model} {self.year}'
 
-    def use_gas(self):
-        self.gas -= 50
-        print(self.gas)
+
+    def __eq__(self, other):
+        return self.make == other.make and self.model == other.model
+
 
     def stop(self):
         if self.is_moving:
@@ -35,7 +36,41 @@ class Car:
             print("You've run out of gas!")
             self.stop()
 
+
+    def use_gas(self):
+        self.gas -= 50
+        if self.gas <= 0:
+            return False
+        else:
+            return True
+class Dealership:
+    def __init__(self):
+        self.cars = []
+
+    def __iter__(self):
+        yield from self.cars
+        #yield from is a KEYWORD that tells python to grab each item from the iterable(list) that we are giving it
+    def add_car(self, car):
+        self.cars.append(car)
+
+my_dealership = Dealership()
 car_one = Car("Mustang", "Model T", 1908)
+car_two = Car("Ford", "Focus", 2014)
+car_three = Car("Mazda", "MPV ", 2006)
+
+if car_one == car_two:
+    print('equal')
+else:
+    print('not equal')
+
+my_dealership.add_car(car_one)
+my_dealership.add_car(car_two)
+my_dealership.add_car(car_three)
+for car in my_dealership:
+    print(car)
+
+
+print("\n\n\n\n")
 print(car_one)
 print(str(car_one))
 car_one.use_gas()

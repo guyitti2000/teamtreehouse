@@ -1,6 +1,8 @@
 class Phone:
 
 
+
+
     lens = 1
     battery = 1
     chip = 1
