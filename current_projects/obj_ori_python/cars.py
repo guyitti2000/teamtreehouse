@@ -14,10 +14,8 @@ class Car:
     def __str__(self):
         return f'{self.make} {self.model} {self.year}'
 
-
     def __eq__(self, other):
         return self.make == other.make and self.model == other.model
-
 
     def stop(self):
         if self.is_moving:
@@ -36,22 +34,25 @@ class Car:
             print("You've run out of gas!")
             self.stop()
 
-
     def use_gas(self):
         self.gas -= 50
         if self.gas <= 0:
             return False
         else:
             return True
+
+
 class Dealership:
     def __init__(self):
         self.cars = []
 
     def __iter__(self):
         yield from self.cars
-        #yield from is a KEYWORD that tells python to grab each item from the iterable(list) that we are giving it
+        # yield from is a KEYWORD that tells python to grab each item from the iterable(list) that we are giving it
+
     def add_car(self, car):
         self.cars.append(car)
+
 
 my_dealership = Dealership()
 car_one = Car("Mustang", "Model T", 1908)
