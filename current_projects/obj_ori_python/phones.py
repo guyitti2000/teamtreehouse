@@ -40,14 +40,14 @@ class Phone:
 
 
     def use_battery(self):
-        if self.is_on == True:
+        if self.is_on:
             self.battery -= float(input("\n{}% BATTERY. How much battery % will you use?: ".format(self.battery)))
             print('{}% battery left.'.format(self.battery))
 
 
     def applications(self):
         # BUG if it goes below 0%, it will print out a negative%
-        while self.is_on == True:
+        while self.is_on:
             while self.battery > 0:
                 apps = input("\nWhich app would you like to use? (Instagram, Snapchat, YouTube): ")
                 if apps.lower() == "instagram":
